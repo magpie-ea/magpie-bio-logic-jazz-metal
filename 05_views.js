@@ -110,7 +110,7 @@ const forced_choice = magpieViews.view_generator("forced_choice", {
   trials: trial_info.forced_choice.length,
   // name should be identical to the variable name
   name: 'forced_choice',
-  data: trial_info.forced_choice,
+  data: _.shuffle(trial_info.forced_choice),
   // you can add custom functions at different stages through a view's life cycle
   // hook: {
   //     after_response_enabled: check_response
